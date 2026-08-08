@@ -125,3 +125,273 @@
 **Actual Result:** Not Executed
 
 **Status:** Not Run
+
+### TC-REG-002 — Registration with Missing Required Fields
+
+**Scenario ID:** REG-SC-002
+
+**Title:** Verify registration fails when required fields are missing
+
+**Priority:** High
+
+**Type:** Negative Testing
+
+**Preconditions:**
+- User is on the Registration page.
+
+**Test Data:**
+- Leave one or more required fields empty.
+- Enter valid data in the remaining fields.
+
+**Test Steps:**
+1. Open the Registration page.
+2. Leave one or more required fields empty.
+3. Enter valid data in the remaining fields.
+4. Click the Register/Submit button.
+
+**Expected Result:**
+- The system should not create the account.
+- Validation messages should be displayed for the missing required fields.
+- The user should be able to correct the missing information.
+- No incomplete registration should be submitted.
+
+**Actual Result:** Not Executed
+
+**Status:** Not Run
+
+### TC-REG-003 — Invalid Phone Number
+
+**Scenario ID:** REG-SC-003
+
+**Title:** Verify registration fails when an invalid phone number is entered
+
+**Priority:** High
+
+**Type:** Negative Testing
+
+**Preconditions:**
+- User is on the Registration page.
+
+**Test Data:**
+- Invalid phone number format.
+
+**Test Steps:**
+1. Open the Registration page.
+2. Enter valid data in all required fields.
+3. Enter an invalid phone number.
+4. Click the Register/Submit button.
+
+**Expected Result:**
+- The system should reject the invalid phone number.
+- A clear validation message should be displayed.
+- The registration request should not be completed until a valid phone number is provided.
+
+**Actual Result:** Not Executed
+
+**Status:** Not Run
+
+### TC-REG-004 — Invalid Email Address
+
+**Scenario ID:** REG-SC-004
+
+**Title:** Verify registration fails when an invalid email address is entered
+
+**Priority:** High
+
+**Type:** Negative Testing
+
+**Preconditions:**
+- User is on the Registration page.
+
+**Test Data:**
+- Invalid email address format.
+- Example: `user@`
+
+**Test Steps:**
+1. Open the Registration page.
+2. Enter valid data in all other required fields.
+3. Enter an invalid email address.
+4. Click the Register button.
+
+**Expected Result:**
+- The system should reject the invalid email address.
+- A clear validation message should be displayed.
+- The registration should not be completed until a valid email address is provided.
+
+**Actual Result:** Not Executed
+
+**Status:** Not Run
+
+### TC-REG-005 — Password and Confirm Password Validation
+
+**Scenario ID:** REG-SC-005
+
+**Title:** Verify registration validation when Password and Confirm Password do not match
+
+**Priority:** High
+
+**Type:** Negative Testing
+
+**Preconditions:**
+- User is on the Registration page.
+
+**Test Data:**
+- Valid password.
+- Different Confirm Password.
+
+**Test Steps:**
+1. Open the Registration page.
+2. Enter valid data in all required fields.
+3. Enter a valid password.
+4. Enter a different value in Confirm Password.
+5. Click the Register button.
+
+**Expected Result:**
+- The system should detect that Password and Confirm Password do not match.
+- A clear validation message should be displayed.
+- The registration should not be completed until both values match.
+
+**Actual Result:** Not Executed
+
+**Status:** Not Run
+
+### TC-REG-005 — Password and Confirm Password Validation
+
+**Scenario ID:** REG-SC-005
+
+**Title:** Verify registration fails when password and confirm password do not match
+
+**Priority:** High
+
+**Type:** Negative Testing
+
+**Preconditions:**
+- User is on the Registration page.
+
+**Test Data:**
+- Valid password.
+- Different Confirm Password.
+
+**Test Steps:**
+1. Open the Registration page.
+2. Enter valid data in all required fields.
+3. Enter a valid password.
+4. Enter a different value in Confirm Password.
+5. Click the Register button.
+
+**Expected Result:**
+- The system should detect that the passwords do not match.
+- A clear validation message should be displayed.
+- The registration should not be completed until both passwords match.
+
+**Actual Result:** Not Executed
+
+**Status:** Not Run
+
+### TC-REG-006 — Identity Document Upload
+
+**Scenario ID:** REG-SC-006
+
+**Title:** Verify user can upload the required identity document during registration
+
+**Priority:** High
+
+**Type:** Functional Testing
+
+**Preconditions:**
+- User is on the Registration page.
+- User has a valid identity document available.
+
+**Test Data:**
+- Valid identity document.
+
+**Test Steps:**
+1. Open the Registration page.
+2. Enter valid registration information.
+3. Navigate to the identity document upload section.
+4. Select a valid identity document.
+5. Upload the document.
+6. Complete the remaining required registration information.
+7. Submit the registration form.
+
+**Expected Result:**
+- The system accepts the uploaded identity document.
+- The uploaded document is displayed successfully.
+- No upload error is displayed.
+- The registration process can continue to the next step.
+
+**Actual Result:** Not Executed
+
+**Status:** Not Run
+
+### TC-REG-007 — Invalid Identity Document Upload
+
+**Scenario ID:** REG-SC-007
+
+**Title:** Verify the system rejects an invalid identity document
+
+**Priority:** High
+
+**Type:** Negative Testing
+
+**Preconditions:**
+- User is on the Registration page.
+- User has an invalid or unsupported identity document.
+
+**Test Data:**
+- Invalid identity document.
+- Unsupported file format or invalid document.
+
+**Test Steps:**
+1. Open the Registration page.
+2. Enter valid registration information.
+3. Navigate to the identity document upload section.
+4. Select an invalid or unsupported document.
+5. Attempt to upload the document.
+
+**Expected Result:**
+- The system should reject the invalid document.
+- A clear validation or upload error should be displayed.
+- The invalid document should not be accepted as a valid identity document.
+- The user should be able to upload a valid document.
+
+**Actual Result:** Not Executed
+
+**Status:** Not Run
+
+### TC-REG-008 — Selfie Upload
+
+**Scenario ID:** REG-SC-008
+
+**Title:** Verify user can upload a valid selfie during registration
+
+**Priority:** High
+
+**Type:** Functional Testing
+
+**Preconditions:**
+- User is on the Registration page.
+- User has a valid selfie image available.
+
+**Test Data:**
+- Valid selfie image.
+
+**Test Steps:**
+1. Open the Registration page.
+2. Enter valid registration information.
+3. Navigate to the selfie upload section.
+4. Select a valid selfie image.
+5. Upload the image.
+6. Complete the remaining required registration information.
+7. Submit the registration form.
+
+**Expected Result:**
+- The system accepts the valid selfie.
+- The uploaded selfie is displayed successfully.
+- No upload error is displayed.
+- The registration process can continue to the next step.
+
+**Actual Result:** Not Executed
+
+**Status:** Not Run
+
