@@ -71,3 +71,57 @@
 | ADMIN-SC-005 | Verify admin can view payment information | Positive |
 | ADMIN-SC-006 | Verify admin can access reports | Positive |
 | ADMIN-SC-007 | Verify unauthorized user cannot access admin functions | Negative |
+
+
+---
+
+# Detailed Test Cases
+
+## Registration
+
+### TC-REG-001 — Successful Customer Registration
+
+**Scenario ID:** REG-SC-001
+
+**Title:** Verify customer can register with valid required data
+
+**Priority:** High
+
+**Type:** Functional Testing
+
+**Preconditions:**
+- User is on the Registration page.
+- User is not already registered in the system.
+
+**Test Data:**
+- Valid Full Name
+- Valid Phone Number
+- Valid Email Address
+- Valid Password
+- Matching Confirm Password
+- Valid Selfie
+- Valid ID Document
+- Valid Verification Method
+
+**Test Steps:**
+1. Open the Registration page.
+2. Enter a valid Full Name.
+3. Enter a valid Phone Number.
+4. Enter a valid Email Address.
+5. Enter a valid Password.
+6. Enter the same password in Confirm Password.
+7. Upload a valid Selfie.
+8. Upload a valid ID Document.
+9. Select a valid Verification Method.
+10. Submit the registration form.
+11. Complete the verification process.
+
+**Expected Result:**
+- The system accepts the provided valid information.
+- The registration request is submitted successfully.
+- The user is directed to the required verification process.
+- After successful verification, the account is created successfully.
+
+**Actual Result:** Not Executed
+
+**Status:** Not Run
